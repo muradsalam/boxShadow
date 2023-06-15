@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .btn {
+            cursor: pointer;
+            float: left;
+            line-height: 50px;
+            width: 100px;
+            background-color: cyan;
+            text-align: center;
+            font-size: 15px;
+            margin: 5px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.4;
+            box-shadow: 0 0 5px cyan;
+        }
+
+        .btn:hover {
+            color: slateblue;
+            box-shadow: 0 0 5px cyan,
+                0 0 25px cyan,
+                0 0 50px cyan,
+                0 0 100px cyan,
+                0 0 200px cyan;
+        }
+        .murad {
+            float: left;
+            height: 200px;
+            width: 300px;
+            margin: 30px auto;
+            background-image: url(murad.jpg);
+            background-size: cover;
+            transition: 1s;
+            filter: drop-shadow(2px 2px 2px);
+        }
+        .murad:hover {
+            scale: 1.02;
+            filter: drop-shadow(10px 10px 10px white);
+        }
+    </style>
+</head>
+
+<body>
+    <a href="ayaz.html"><div class="btn">AYAZ</div></a>
+    <a href="vahid.html"><div class="btn">VAHID</div></a>
+    <a href="mikayil.html"><div class="btn">MIKAYIL</div></a>
+    <a href="murad.html"><div class="btn">MURAD</div></a>
+    <div class="murad"></div>
+</body>
+
+</html>
